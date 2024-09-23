@@ -97,6 +97,11 @@ services:
       GMAIL_USER: diogo.g.cavalcanti@gmail.com
       GMAIL_PASSWORD: mifubsbkkrksdkjb
 
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - 5672:5672
+
   postgre-academico:
     image: postgres
     environment:
