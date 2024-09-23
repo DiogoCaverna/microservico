@@ -20,7 +20,7 @@ jobs:
     - name: Composer (php-actions)
       uses: php-actions/composer@v6
       with:
-        php_extensions: sockets pdo_psql
+        php_extensions: sockets pdo_pgsql
             
     - name: PHPCS
       run: composer run phpcs
